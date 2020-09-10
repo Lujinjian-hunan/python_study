@@ -1,0 +1,64 @@
+上周回顾：
+    1、字典 k - v {K:v,k1:v1}
+    d[key] = value
+    d.setdefault(key,value)
+
+    d.get(key)
+    d[key]
+
+    d.pop(key)
+    del d[key]
+
+    d.update(key=value)
+    2、元组
+    (1,2,3)
+    3、字符串常用的方法
+    s=' abc\n'
+    s.strip() s.lstrip() s.rstrip()
+    s.split('')
+    ''.join([1,2,3,4,5])
+    s.isdigit()
+    s.isupper()
+    s.islower()
+    s.upper()
+    s.lower()
+    s.zfill(2) #001
+    s.find() #-1
+    s.index()#报错
+    s.startswith()
+    s.endswith()
+    s.count('a')
+    s.replace('a','A')
+
+    切片：list取值的一种方式（范围）
+    s = [1,2,3,4,5,6,7]
+    #0 1 2
+    s[0:3:-1]
+
+    4、文件操作
+        open(file,mode,encoding="utf-8")  #file()
+        #r  w  a
+        #r+ w+ a+ seek()
+        f.write()
+        f.writelines()
+
+        f.read()
+        f.readlines()
+        f.readline()
+
+
+本周内容：
+    1、文件操作讲完
+    2、三元表达式、列表生成式
+    3、集合
+    5、json
+    4、函数
+本周作业：
+    写一个管理商品的程序，商品文件格式在a.json里面
+    提供商品的增删改查功能
+    choice = input('请输入你的选择:1、查看商品 2、新增商品 3、修改商品 4、删除商品')
+    #1、查看商品，输入商品名称，print单个商品的信息，价格、数量，输入all，查看所有商品
+    #2、新增商品，输入商品名称、数量、价格，数量是大于0的整数，价格必须是大于0的数值，
+    #如果商品存在，无法添加
+    #3、修改商品，输入商品名称、数量、价格，商品存在才可以修改 数量是大于0的整数，价格必须是大于0的数值，
+    #4、输入商品名称，如果存在，删除

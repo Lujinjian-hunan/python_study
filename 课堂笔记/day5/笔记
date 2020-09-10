@@ -1,0 +1,35 @@
+模块：
+一个python文件就是一个模块
+标准模块 python自带的
+第三方模块 别人写的，需要自己安装的
+自己写的
+
+模块的原理：
+imoort一个模块的实质就是把一个python文件执行一遍
+
+导入模块带的顺序：
+1、首先从当前目录下找
+2、从python环境变量目录里面找
+    # 查看python环境变量目录
+    import sys
+    print(sys.path)
+    把文件夹写入到python环境变量目录里面去，insert(0,*)添加到第一个
+    sys.path.insert(0,文件路径)
+3、两种导入模块的方式
+import my_model
+my_model.name
+
+from my_model import name
+print(name)
+
+if __name__ == '__main__':
+    这个模块被导入时，不会执行if下面的代码
+    __main__ 当前py文件的名字
+
+prel也有pip命令
+把python的pip命令重命名
+ where pip → pip_py
+
+
+字符集不一致会导致乱码
+ascll gb2312 gbk unicode(所有字符占2个字节) utf-8(英文占一个字符，中文2个)

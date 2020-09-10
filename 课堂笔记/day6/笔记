@@ -1,0 +1,28 @@
+上周回顾：
+    1.内置函数
+        len type id print input open
+        round min max filter map zip exec eval sorted
+    2.模块
+        1.安装模块
+            第三方模块
+            pip install xxx
+            pip install xxx.whl
+            python setup.py install
+
+            pip uninstall xxx
+            pip install -u xxx  # 升级到最新
+            pip install --upgrade xxx
+
+            pip freeze  # 显示当前安装的模块及版本
+            pip freeze > requirements.txt  # 导出已经安装过的依赖
+            pip install -r (文件名)  # 批量安装文件中的模块
+        2.导入模块
+        3.查找模块原理
+    3.常用模块
+        os
+        time
+        random
+        sys
+
+本周内容：
+    操作数据库、redis、excel、发送邮件、异常处理
