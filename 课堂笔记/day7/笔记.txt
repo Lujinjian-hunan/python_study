@@ -1,0 +1,63 @@
+国庆上课时间：
+    节前：9.26上课
+    节后：10.11上课
+上周回顾：
+    excel、发邮件、mysql、异常处理
+    xlwt
+    xlrd
+    xlutils
+
+    yamail
+
+    try
+
+    pymysql
+作业：
+    1、传入一个表名，把整个表里的数据导出到excel
+    2、改写商品管理的程序，改为从数据库里面取数据
+
+
+本周内容：
+     redis
+     数据库：
+        关系型数据库：mysql、oracle、sqlserver、sqlite..
+            数据库
+            表
+            sql
+        非关系型数据库：nosql
+            k - v
+            redis   -》 存在内存里面 ，做缓存用，每秒 10w的读写
+            MongoDB -》放在磁盘里面
+            ....
+     mock接口开发：
+        1、查询产品 开户接口 xxx
+           product =>
+           {
+             "code":0,
+             "data":[
+                 {"id":1,"prodcut_name":"xxx"},
+                 {"id":1,"prodcut_name":"xxx"},
+                 {"id":1,"prodcut_name":"xxx"},
+                 {"id":1,"prodcut_name":"xxx"},
+                 {"id":1,"prodcut_name":"xxx"},
+                 {"id":1,"prodcut_name":"xxx"}
+             ]
+           }
+        2、
+作业：
+    1、写一个程序，传入一个群号，把这个群里所有的人的qq头像下载到本地
+        如果这个人有群备注，那么图片的名称就是 刘海洋.jpg 如果没有就取昵称 朝花夕拾.jpg
+        https://q4.qlogo.cn/g?b=qq&nk=857566034&s=140
+    2、写接口
+        1、登录接口，登录成功之后返回sessionid：xxx
+           当前时间戳+username,做md5，生成sessionid，seesion过期时间，自己定义
+           redis里面存进入seesionid，xxxxxxxx:userid, time
+
+        2、支付接口
+            table
+            userid money
+            1        200
+
+            /pay?sessionid=xxxxx&money=90
+            sessionid 是否失效
+
